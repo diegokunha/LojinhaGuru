@@ -1,0 +1,7 @@
+INDEX VERSION 1.126
+C:\Users\Ester Kunha\Documents\GitHub\LojinhaGuru\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3036180287.index
+\LojinhaGuru\src
+C:\Users\Ester Kunha\Documents\GitHub\LojinhaGuru\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1247937075.index
+\LojinhaGuru\src
+C:\Users\Ester Kunha\Documents\GitHub\LojinhaGuru\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\532434944.index
+\LojinhaGuru\src

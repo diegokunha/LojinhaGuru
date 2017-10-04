@@ -1,0 +1,5 @@
+package br.com.lojinhaguru.dao;
+
+public class ClienteDao {
+
+}

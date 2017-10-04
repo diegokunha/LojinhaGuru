@@ -1,0 +1,54 @@
+package br.com.lojinhaguru.controller;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import br.com.lojinhaguru.dao.ClienteDao;
+import br.com.lojinhaguru.model.Clientes;
+
+@Controller
+public class LojinhaGuruController {
+
+	@RequestMapping("index")
+	public String execute() {
+		return "index";
+	}
+
+	@RequestMapping("clientes")
+	public String formCliente() {
+		return "jsp/clientes";
+	}
+	
+	@RequestMapping("fornecedores")
+	public String formFornecedor() {
+		return "jsp/fornecedores";
+	}
+	
+	@RequestMapping("produtos")
+	public String formProduto() {
+		return "jsp/produtos";
+	}
+	
+	@RequestMapping("adicionaCliente")
+	public String adicionaCliente(@Valid Clientes clientes, BindingResult result) {
+		
+		if(result.hasErrors()){
+			return "jsp/adicionaCliente";
+		}
+		
+		ClienteDao dao = new ClienteDao();
+		dao.incluiCliente(clientes);
+		
+		return "jsp/adicionaCliente";
+		
+	}
+	
+	@RequestMapping("novoCliente")
+	public String novoCliente() {
+		return "jsp/adicionaCliente";
+	}
+	
+}

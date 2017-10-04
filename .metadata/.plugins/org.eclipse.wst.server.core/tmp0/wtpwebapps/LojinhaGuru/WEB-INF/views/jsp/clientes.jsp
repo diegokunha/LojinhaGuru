@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 style="text-align: center">CLIENTES</h1>
+	<div class="container">
+		<form>
+
+			<a href="adicionaCliente"><button type="button"
+					class="btn btn-success">Novo</button></a> <a href="index"><button
+					type="button" class="btn btn-danger">Voltar</button></a><br /><br />
+
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Cidade</th>
+						<th>Estado</th>
+						<th>Contato</th>
+						<th>E-mail</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Diego Fernando da Cunha</td>
+						<td>Nova Iguaçu</td>
+						<td>RJ</td>
+						<td>(21) 98494-3071</td>
+						<td>diegokunha@gmail.com</td>
+						<td>
+							<button type="button" class="btn"><span class="glyphicon glyphicons-pen" style="color:black" /></button>
+							<button type="button" class="btn btn-link"><span class="glyphicon glyphicons-remove-sign" /></button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

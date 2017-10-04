@@ -1,0 +1,33 @@
+package br.com.lojinhaguru.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class LojinhaGuruController {
+
+	@RequestMapping("index")
+	public String execute() {
+		return "index";
+	}
+
+	@RequestMapping("clientes")
+	public String formCliente() {
+		return "jsp/clientes";
+	}
+	
+	@RequestMapping("fornecedores")
+	public String formFornecedor() {
+		return "jsp/fornecedores";
+	}
+	
+	@RequestMapping("produtos")
+	public String formProduto() {
+		return "jsp/produtos";
+	}
+	
+	@RequestMapping("adicionaCliente")
+	public String formAdicionaCliente() {
+		return "jsp/adicionaCliente";
+	}
+}
