@@ -5,3 +5,5 @@ C:\Users\Ester Kunha\Documents\GitHub\LojinhaGuru\.metadata\.plugins\org.eclipse
 \LojinhaGuru\src
 C:\Users\Ester Kunha\Documents\GitHub\LojinhaGuru\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\532434944.index
 \LojinhaGuru\src
+C:\Users\Ester Kunha\Documents\GitHub\LojinhaGuru\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2353267527.index
+\LojinhaGuru\src

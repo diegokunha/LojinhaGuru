@@ -14,7 +14,7 @@ public class LojinhaGuruController {
 
 	@RequestMapping("index")
 	public String execute() {
-		return "index";
+		return "jsp/index";
 	}
 
 	@RequestMapping("clientes")
@@ -32,23 +32,21 @@ public class LojinhaGuruController {
 		return "jsp/produtos";
 	}
 	
-	@RequestMapping("adicionaCliente")
+	@RequestMapping("novoCliente")
 	public String adicionaCliente(@Valid Clientes clientes, BindingResult result) {
-		
+				
 		if(result.hasErrors()){
-			return "jsp/adicionaCliente";
+			return "jsp/formulario";
 		}
 		
 		ClienteDao dao = new ClienteDao();
 		dao.incluiCliente(clientes);
 		
-		return "jsp/adicionaCliente";
+		return "jsp/adicionado";
 		
 	}
 	
-	@RequestMapping("novoCliente")
-	public String novoCliente() {
-		return "jsp/adicionaCliente";
-	}
+	
+	
 	
 }

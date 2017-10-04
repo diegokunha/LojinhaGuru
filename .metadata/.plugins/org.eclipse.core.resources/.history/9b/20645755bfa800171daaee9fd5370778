@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>NOVO CLIENTE</h1>
+	<div class="container">
+
+		<form action="novoCliente" method="post">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label for="cpf">CPF:</label> <input type="text" class="form-control" id="cpf" name="cpf">
+				</div>
+				<div class="form-group">
+					<label for="nome">Nome:</label> <input type="text"	class="form-control" id="nome" name="nome">
+				</div>
+				<div class="form-group">
+					<label for="endereco">Endereço:</label> <input type="text"	class="form-control" id="endereco" name="endereco">
+				</div>
+				<div class="form-group">
+					<label for="numero">Número:</label> <input type="text"	class="form-control" id="numero" name="numero">
+				</div>
+				<div class="form-group">
+					<label for="complemento">Complemento:</label> <input type="text"	class="form-control" id="complemento" name="complemento">
+				</div>
+				<div class="form-group">
+					<label for="bairro">Bairro:</label> <input type="text"	class="form-control" id="bairro" name="bairro">
+				</div>
+				<div class="form-group">
+					<label for="municipio">Municipio:</label> <input type="text"	class="form-control" id="municipio" name="municipio">
+				</div>
+				<div class="form-group">
+					<label for="uf">UF:</label> <input type="text"	class="form-control" id="uf" name="uf">
+				</div>
+				<div class="form-group">
+					<label for="contato">Contato:</label> <input type="text" class="form-control" id="contato" name="contato">
+				</div>
+				<div class="form-group">
+					<label for="email">E-mail:</label> <input type="text" class="form-control" id="email" name="email">
+				</div>
+				<div class="form-group">
+					<label for="dataNasc">Data de Nascimento:</label> <input type="text" class="form-control" id="dataNasc" name="dataNasc">
+				</div>
+				<input type="submit" value="Adiciona">
+				<a href="clientes"><button type="button" class="btn btn-danger">Voltar</button></a>
+			</div>
+			
+		</form>
+
+	</div>
+</body>
+</html>

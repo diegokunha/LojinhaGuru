@@ -32,17 +32,17 @@ public class ClienteDao {
 		PreparedStatement stm;
 		try{
 			stm = (PreparedStatement) con.clientPrepareStatement(sql);
-			stm.setString(0, clientes.getNome());
-			stm.setString(1, clientes.getEndereco());
-			stm.setString(2, clientes.getNumero());
-			stm.setString(3, clientes.getComplemento());
-			stm.setString(4, clientes.getBairro());
-			stm.setString(5, clientes.getMunicipio());
-			stm.setString(6, clientes.getUf());
-			stm.setString(7, clientes.getCep());
-			stm.setString(8, clientes.getContato());
-			stm.setString(9, clientes.getEmail());
-			stm.setDate(10, new Date(clientes.getDataNascimento().getTimeInMillis()));
+			stm.setString(1, clientes.getNome());
+			stm.setString(2, clientes.getEndereco());
+			stm.setString(3, clientes.getNumero());
+			stm.setString(4, clientes.getComplemento());
+			stm.setString(5, clientes.getBairro());
+			stm.setString(6, clientes.getMunicipio());
+			stm.setString(7, clientes.getUf());
+			stm.setString(8, clientes.getCep());
+			stm.setString(9, clientes.getContato());
+			stm.setString(10, clientes.getEmail());
+			stm.setDate(11, new Date(clientes.getDataNascimento().getInstance().getTimeInMillis()));
 			
 			stm.execute();
 			con.close();
